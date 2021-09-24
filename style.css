@@ -1,0 +1,461 @@
+
+    body
+     {
+         height:100%;
+         background: linear-gradient(30deg,#E94560 50%, #FFBD69 50%);
+         overflow-wrap:break-word;
+         font-family: 'Comic Neue', cursive;
+     }
+
+     .container
+     {
+         display:flex;
+         word-spacing:3px;
+         position:relative;
+     }
+    
+     .left-side
+     {
+         width:50%;
+         float:left;
+     }
+
+     img
+     {
+         width:75%;
+         height:75%;
+         position:relative;
+         left: -20px;
+         display:block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top:16%;
+         border-style:double;  
+         border-width:15px;
+         border-color:rgb(228, 214, 214);
+         box-shadow:10px 5px 9px rgb(85, 83, 83);
+         transform:rotate(-5deg);
+         perspective: 150px;
+         transition: 0.4s;
+     }
+
+     img:hover
+     {
+         transform: scale(1.5,1.5) rotate(5deg);
+     }
+     
+     .right-side
+     {
+         width:50%;
+         float:right;
+         text-align: center;
+     }
+
+    #Contact
+    {
+        border-style:none;
+        background:none;
+        font-size:25px;
+    }
+
+    .contact-block
+     {
+         display:none;
+         z-index: 1;
+         left: 100px;
+         top: 0;
+         position:absolute;
+         padding-top: 60px;
+         width: 85%;
+         height:100%;
+         padding-top:60px;
+        
+     }
+     .buttons
+     {
+         padding-top:5%;
+         font-size:25px; 
+         position:relative;
+         left: 20%;
+         animation: mymove 5s infinite;
+     }
+
+     .buttons a, .right-buttons a, #Contact
+     {
+         display:inline-flex;
+     }
+
+     .right-buttons a
+     {
+         padding-top:5%;
+         font-size:25px; 
+     }
+
+     #Github
+     {
+         position:relative;
+         left:20%;
+     }
+
+     #Blog
+     {
+         position:relative;
+         left:20%;
+     }
+
+     .buttons a:hover
+     {
+         background-color: #41be45;
+         transform:rotate(-10deg) scale(1.5,1.5);
+         transition-duration: 0.6s;
+         color:white;
+     }
+
+     .right-buttons a:hover, #Contact:hover
+     {
+         background-color: #e44a4a; 
+         transform:rotate(10deg) scale(1.5,1.5);
+         transition-duration: 0.6s;
+         color:white; 
+     }
+
+
+     #Github-page, #About-page, #Blog-page, #Contact-page
+     {
+         text-decoration:none;
+         border:none;
+         background:none;
+         border-left:1px solid white;
+         color:mediumpurple;
+         text-transform:uppercase;
+         padding-left:9px;
+         padding-right:8px;
+     }
+
+
+     #menu-buttons a:hover
+     {
+         background-color: #e44a4a; 
+         transform:rotate(10deg) scale(1.5,1.5);
+         transition-duration: 0.6s;
+         color:white;
+     }
+
+     .link, #Contact
+     {
+         text-decoration:none;
+         border-bottom: 2px solid rgb(70, 77, 180);
+         color:black;
+     }
+
+     .contact-content
+     {
+         background: #2ba9df;
+         margin-top: 5%;
+         margin-left:26%;
+         border: 1px solid #888;
+         width: 50%;
+         height: 65%;
+         animation-name: popup;
+         animation-duration: 0.2s;
+     }
+
+     .contact-content h3
+     {
+         position:absolute;
+         right:100px;
+         top:165px;
+         text-align:center;
+         font-size:30px;
+
+     }
+
+     .contact-content p
+     {
+         position:relative;
+         text-align:center;
+         color:black;
+         top:50px;
+
+     }
+
+     #eid
+     {
+         position:relative;
+         font-size:20px;
+         top:70px;
+         left:90px;
+         color:#ced3a1;
+     }
+     #Intro
+     {
+         text-align:center;
+         text-transform: uppercase;
+         margin-left:auto;
+         padding-right:10px;
+         margin-top:25%; 
+         position:relative;
+         right:5px;
+     }
+
+     h1
+     {
+         font-size:75px; 
+         text-align:left;
+         padding-left:10%;
+         letter-spacing:5px; 
+         word-wrap:break-word;
+         padding-bottom:25px;
+     }
+     #line
+     {
+         text-decoration:none;
+         border-bottom: 5px solid #000;
+         width:2px;
+     }
+     
+     h3
+     {
+         font-size:35px;
+         text-align:left;
+         padding-left:10%;
+         padding-bottom:25px;
+         position:relative;
+         left:10px;
+         top:15px;
+     }
+     small
+     {
+         font-size:46px;
+         text-decoration:underline;
+         position:relative;
+         left:3%;
+         padding-left:20px;
+         top:30px;
+         left:35px;
+     }
+
+     .short-text
+     {
+         display:none;
+     }
+     .right-text
+     {
+         color:white;
+     }
+
+     #foot-line
+     {
+        
+         border-bottom:2px dashed black;
+         width:93%;
+         position:relative;
+         left:10px;
+         margin-bottom:20px;
+     }
+     .foot
+     {
+         background-color: #E94560;
+         text-align: center;
+         color:white;
+         margin-top:25%;
+         padding-bottom:1px; 
+         text-transform:uppercase;
+         letter-spacing:3px;
+         word-spacing:3px;
+     } 
+
+
+     @keyframes popup
+     {
+         0% 
+         {
+             transform:scale(0.1);
+             opacity:0;
+         }
+         100%
+         {
+             transform: scale(1) rotate(360deg);
+         }
+     }
+
+     #contact-title
+     {
+         font-size:30px;
+         text-align:center;
+         position:relative;
+         right:30px;
+     }
+
+
+     @media only screen and (max-width:750px)
+     {
+         body
+         {
+             padding:0;
+             margin:0;
+            
+         }
+         .left-side
+         {
+             width:50%;
+             float:left;
+         }
+        
+         #Github-page, #Contact-page, #About-page, #Blog-page
+         {
+             width: 14%;
+             text-decoration:none;
+             border-left:1px solid white;
+             color:rgb(112, 204, 216);
+         }
+
+         img, img:hover
+         {
+             width:310px;
+             height:310px;
+             position:absolute;
+             top:150px;
+             border-style:double;  
+             border-width:15px;
+             transform:none;
+             border-color:aliceblue;
+             box-shadow:10px 10px 5px rgb(85, 83, 83);
+         }
+
+         #Intro
+         {
+             text-align:center;
+             text-transform: uppercase;
+             margin-top:25%; 
+             position:relative;
+             left:180px;
+         }
+
+         #Intro h1
+         {
+             font-size:50px; 
+             text-align:right;
+             word-wrap:normal;
+             letter-spacing:5px; 
+             padding-bottom:5px;
+             position:relative;
+             right:240px;
+             top:20px;
+         }
+         
+
+         h3
+         {
+             font-size:35px;
+             text-align:right;
+             position:absolute;
+             left:60%;
+             top:40px;
+         }
+
+         small,.short-text
+         {
+             font-size:46px;
+             text-decoration:underline;
+             position:relative;
+             left:40%;
+             padding-left:15px;
+             top:90px;
+             word-wrap:normal;
+             display:inline;
+         }
+
+         .normal
+         {
+             display:none;
+         }
+
+         .buttons a, .right-buttons a, button
+         {
+             font-size: 15px;
+         }
+
+         .contact-block
+         {
+             display:none;
+             z-index: 1;
+             left: 200px;
+             top: 0;
+             position:absolute;
+             padding-top: 70px;
+             width: 95%;
+             height:30em;
+
+         }
+         #contact-title
+         {
+             text-align:center;
+             position:inherit;
+             left:20px;
+         }
+         .contact-content h3
+         {
+             position:inherit;
+             bottom:30px;
+             top:30px;
+             right:20%;
+             font-size:18px;
+             text-align:center;
+         }
+
+         .contact-content p
+         {
+             position:relative;
+             text-align:center;
+             color:black;
+             top:10px;
+
+         }
+
+         #eid
+         {
+             position:inherit;
+             text-align:center;
+             font-size:18px;
+             left:120em;
+         }
+
+         .buttons a:hover
+         {
+             background-color: #41be45; 
+             transition-duration: 0.4s;
+         }
+
+         .right-buttons a:hover, button:hover
+         {
+             background-color: #e44a4a; 
+             transition-duration: 0.4s; 
+         }
+         .link
+         {
+             margin-left:20px;
+             text-decoration:none;
+             border-bottom: 2px solid rgb(70, 77, 180);
+             margin-top:10px;
+             color:black;
+         }  
+
+         #Contact
+         {
+             font-size:15px;
+         }
+
+         @keyframes popup
+         {
+             0% 
+             {
+                 transform:scale(0.1);
+                 opacity:0;
+             }
+             100%
+             {
+                 transform: scale(1) rotate(360deg);
+             }
+         }
+     }
